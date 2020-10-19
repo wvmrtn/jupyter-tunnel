@@ -5,7 +5,13 @@
 function jpt(){
     jupyter notebook --no-browser --port="$1"
 }
+
 # Forwards port $1 into port $2 and listens to it from remoteuser@remotehost $3
 function jptt(){
     ssh -N -f -L localhost:"$2":localhost:"$1" "$3"
+}
+
+# Find process to kill
+function jpk(){
+    sudo lsof -i -n -P | grep "$1"
 }
