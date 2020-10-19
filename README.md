@@ -6,4 +6,4 @@ Add
 ```
 source "full_path/jupyter_tunnel.sh"
 ```
-At the end of `~/.bash_profile` or `~/.bashrc`
+At the end of `~/.bash_profile` or `~/.bashrc`, or `~/.zshrc`.
